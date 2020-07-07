@@ -1,0 +1,101 @@
+/* Color Palette Scheme 
+Normal font: #E8EDDF Platinum
+Special font: #F5CB5C Stil De Grain Yellow
+Background: #333533 Jet
+High Contrast: #242423 Raisin Black
+Cards & Extra: #CFDBD5 Light Gray
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242423;
+  color: #e8eddf;
+}
+
+.header {
+  text-align: center;
+  margin: 2rem;
+}
+.header p {
+  margin: 15px;
+}
+.game-content {
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+.choice {
+  height: 33%;
+  width: 75%;
+  margin: auto;
+  color: #242423;
+  background-color: #f5cb5c;
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 10px;
+}
+.choice img {
+  width: 80%;
+  height: 80%;
+}
+.scoreboard {
+  margin-top: 8px;
+  text-align: center;
+}
+.replay-button {
+  visibility: hidden;
+}
+#result-message {
+  margin: 15px 0;
+  text-align: center;
+  visibility: hidden;
+}
+.footer {
+  font-size: 11px;
+}
+.footer a {
+  text-decoration: none;
+  color: #f5cb5c;
+}
+.footer a:hover {
+  color: #e8eddf;
+}
+
+/* Media Queries */
+@media all and (min-width: 480px) {
+}
+@media all and (min-width: 736px) {
+  .game-content {
+    height: 50%;
+    flex-flow: row;
+  }
+  .choice {
+    width: 100%;
+    height: 50%;
+    border-radius: 3px;
+    margin: 2%;
+    padding: 10px;
+  }
+}
+@media all and (min-width: 980px) {
+  .game-content {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1280px) {
+  .game-content {
+    width: 70%;
+  }
+}
+@media all and (min-width: 1690px) {
+  .game-content {
+    max-width: 50%;
+  }
+  .choice {
+    max-width: 50%;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/rps.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Rock Paper Scissors</h1>
+      <p>The objective is to win five rounds before the computer.</p>
+      <p>Select a choice to begin at any time.</p>
+    </div>
+    <div class="game-content">
+      <div class="choice rock">
+        <img src="/assets/rock.svg" alt="rock icon" />
+        <p>Rock</p>
+      </div>
+      <div class="choice paper">
+        <img src="/assets/paper.svg" alt="paper icon" />
+        <p>Paper</p>
+      </div>
+      <div class="choice scissors">
+        <img src="/assets/scissors.svg" alt="scissors icon" />
+        <p>Scissors</p>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <button class="replay-button">Replay</button>
+      <p class="score-text">Player Score:</p>
+      <p id="player-score">0</p>
+      <p class="score-text">Computer Score:</p>
+      <p id="computer-score">0</p>
+      <p id="result-message">You Win</p>
+    </div>
+    <div class="footer">
+      <p>Icons by <a href="https://icons8.com">icons8</a></p>
+    </div>
+    <script src="js/rps.js"></script>
+  </body>
+</html>
